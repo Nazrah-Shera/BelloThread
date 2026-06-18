@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { Link,NavLink } from "react-router-dom"
+import logo from '../assets/Brand-Name-removebg.png'
 
 const NavBar = () => {
 
@@ -9,7 +10,7 @@ const NavBar = () => {
         <nav className='flex items-center justify-between px-6 md:px-20 lg:px-40py-0 fixed top-0 w-full
         bg-white shadow-md h-16 z-9999'>
 
-            <NavLink to="/">  <img src="/Brand-Name-removebg.png" alt="Brand Logo" className='h-12 w-auto' /> </NavLink>
+            <NavLink to="/">  <img src={logo} alt="Brand Logo" className='h-12 w-auto' /> </NavLink>
 
             <ul className='hidden md:flex gap-6'>
                 <NavLink to="/" className="nav-link" ><li>Home</li></NavLink>
