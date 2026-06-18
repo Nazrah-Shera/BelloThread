@@ -8,19 +8,21 @@ import About from './pages/About'
 import Contact from './pages/Contact'
 
 
-import { Routes, Route ,useLocation} from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 import ProductDetails from './pages/ProductDetails';
+import { useRef } from 'react';
 
 
 function App() {
-    const location = useLocation()
+  const location = useLocation()
 
-  const hideUpperFooter = ['/ordernow', '/about', '/contact'].includes(location.pathname)
+ const hideUpperFooter = ['/ordernow', '/about', '/contact'].includes(location.pathname)
 
 
-  
+
   return (
     <>
+
       <NavBar />
       <main className="main-content mt-16 ">
         <Routes>
@@ -29,11 +31,12 @@ function App() {
           <Route path="/ordernow" element={<OrderNow />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
-<Route path="/products/:id" element={<ProductDetails />} />
+          <Route path="/products/:id" element={<ProductDetails />} />
         </Routes>
       </main>
 
-   <Footer hideUpper={hideUpperFooter} />
+      <Footer hideUpper={hideUpperFooter} />
+
     </>
   )
 }
