@@ -1,10 +1,12 @@
+
+
 const products = [
     {
         id: 1,
         category: "Custom Patches",
         name: "Custom Embroidered Patches",
         description: "High-quality embroidered patches perfect for jackets, bags, and more",
-        image: "/Patch1.avif",
+        image:import.meta.env.BASE_URL + "/Patch1.avif",
         features: [
             "100% embroidery thread",
             "Iron-on or sew-on backing",
@@ -17,7 +19,7 @@ const products = [
         category: "Custom Patches",
         name: "Woven Patches",
         description: "Detailed woven patches with crisp, clean lines for intricate designs",
-        image: "/Patch2.avif",
+        image: import.meta.env.BASE_URL + "/Patch2.avif",
         features: [
             "Ultra-fine detail",
             "Durable weave",
@@ -30,7 +32,7 @@ const products = [
         category: "Custom Keychains",
         name: "Acrylic Keychains",
         description: "Lightweight acrylic keychains with vibrant full-color printing",
-        image: "/Keychain1.avif",
+        image:import.meta.env.BASE_URL + "/Keychain1.avif",
         features: [
             "Ultra-fine detail",
             "Durable weave",
@@ -44,7 +46,7 @@ const products = [
         category: "Custom Keychains",
         name: "Metal Keychains",
         description: "Premium metal keychains with custom engraving or enamel design",
-        image: "/Patch1.avif",
+        image:import.meta.env.BASE_URL + "/Patch1.avif",
         features: [
             "Ultra-fine detail",
             "Durable weave",
@@ -57,7 +59,7 @@ const products = [
         category: "Custom Keychains",
         name: "Leather Keychains",
         description: "Classic leather keychains with debossed or embossed branding",
-        image: "/Keychain1.avif",
+        image:import.meta.env.BASE_URL + "/Keychain1.avif",
         features: [
             "Ultra-fine detail",
             "Durable weave",
